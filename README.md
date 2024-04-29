@@ -31,5 +31,5 @@ The decompression algorithm works by reversing the compression process. It reads
 4. The decompressed text will be saved to `decompressed.txt`.
 
 ## Author
-Created by [Your Name]
+Created by Aktan Zhusupbekov
 
