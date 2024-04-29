@@ -25,7 +25,7 @@ To decompress the compressed text:
 1. Make sure you have the compressed text in a file named `compressed.txt`.
 2. Run the decompression program:
     ```
-    decompresse.cpp
+    decompress.cpp
     ```
 3. The decompressed text will be saved to a file named `decompressed.txt`.
 
