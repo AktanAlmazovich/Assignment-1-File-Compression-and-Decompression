@@ -16,7 +16,7 @@ This C++ program demonstrates a simple implementation of Run-Length Encoding (RL
 1. Make sure you have a text file named `input.txt` containing the text you want to compress.
 2. Run the program:
     ```
-    ./compress
+    compresse.cpp
     ```
 3. The compressed text will be saved to a file named `compressed.txt`.
 
@@ -25,7 +25,7 @@ To decompress the compressed text:
 1. Make sure you have the compressed text in a file named `compressed.txt`.
 2. Run the decompression program:
     ```
-    ./decompress
+    decompresse.cpp
     ```
 3. The decompressed text will be saved to a file named `decompressed.txt`.
 
