@@ -1,34 +1,35 @@
-# Assignment-1-File-Compression-and-Decompression
-
-# Run-Length Encoding (RLE) Compression Program
+# Run-Length Encoding (RLE) Compression and Decompression
 
 ## Overview
-This C++ program demonstrates a simple implementation of Run-Length Encoding (RLE) compression. RLE is a basic form of data compression where consecutive data elements that are the same are replaced with a count and a single instance of the element.
+This project implements a simple C++ program to perform Run-Length Encoding (RLE) compression and decompression. RLE is a basic form of data compression where consecutive data elements that are the same are replaced with a count and a single instance of the element.
 
-## Features
-- Reads input text from `input.txt` file.
-- Different varients of inpurt( varient1,varient2) 
-- Compresses the input text using the RLE algorithm.
-- Writes the compressed text to `compressed.txt` file.
-- Decompression program is available to decompress the compressed text.
+## Compression Algorithm
+The compression algorithm works by scanning the input text and replacing consecutive identical characters with a count of the repeated character and the character itself. For example, the string "AAAABBBCCDAA" would be compressed to "4A3B2C1D2A".
+
+## Decompression Algorithm
+The decompression algorithm works by reversing the compression process. It reads the compressed text, interprets the count and character pairs, and reconstructs the original text by repeating each character the specified number of times.
+
+## Major Functions
+- `compress(text)`: This function takes a string `text` as input and returns the compressed version of the text using the RLE algorithm.
+- `decompress(compressed)`: This function takes a compressed string `compressed` as input and returns the decompressed version of the text.
+
+## Implementation Details
+- The program reads the input text from a file named `input.txt`.
+- After compression, the compressed text is saved to a file named `compressed.txt`.
+- For decompression, the program reads the compressed text from `compressed.txt` and writes the decompressed text to a file named `decompressed.txt`.
+- Both compression and decompression programs assume that the input text is ASCII encoded.
 
 ## Usage
-1. Make sure you have a text file named `input.txt` containing the text you want to compress.
-2. Run the program: `compress.cpp`
-3. The compressed text will be saved to a file named `compressed.txt`.
+### Compression
+1. Ensure that you have a text file named `input.txt` containing the text you want to compress.
+2. Run the compression program: `compress.cpp`
+3. The compressed text will be saved to `compressed.txt`.
 
-## Decompression
-To decompress the compressed text:
-1. Make sure you have the compressed text in a file named `compressed.txt`.
+### Decompression
+1. Ensure that you have the compressed text in a file named `compressed.txt`.
 2. Run the decompression program: `decompress.cpp`
-3. The decompressed text will be saved to a file named `decompressed.txt`.
-
-## Notes
-- Both the compression and decompression programs assume that the input text is ASCII encoded.
-- Ensure that the input text file (`input.txt`) is in the same directory as the program.
-- The compressed text will be saved to a file named `compressed.txt`.
-- The decompressed text will be saved to a file named `decompressed.txt`.
+4. The decompressed text will be saved to `decompressed.txt`.
 
 ## Author
-Created by Aktan Zhusupbekov
+Created by [Your Name]
 
